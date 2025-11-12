@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/hawarya/devops_prac.git'
+                git branch: 'main', url: 'https://github.com/hawarya/devops_prac.git'
             }
         }
         stage('Build') {
